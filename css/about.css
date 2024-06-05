@@ -1,0 +1,56 @@
+.interyu-div{
+    background: #f8f8f6;
+}
+.p-div{
+    padding: 10%;
+    margin-top: -4%;
+}
+.div-talim {
+    border: 1px solid;
+}
+.div-talim img{
+    margin-left: 12%;
+    width: 75%;
+}
+.img-talim{
+    margin-left: 12%;
+}
+.list-group {
+    border-radius: 0px;
+    border-top-left-radius: 15px;
+  }
+  .text-ul {
+    background-color: #e9e9e9;
+    list-style: none; /* No bullet points */
+    padding: 0px 25px; /* No padding to align text nicely */
+    margin: 0; /* No margin for clean look */
+    line-height: 1.6; /* Adequate line spacing */
+}
+.text-li {
+    padding: 5px 0px; /* Smaller padding for each item */
+    border-bottom: 1px dashed #ccc; /* Dashed line for separation */
+}
+.text-li:last-child {
+    border-bottom: none; /* No border on the last item */
+}
+.btn-about{
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .btn-about{
+        width: 50%;
+        margin-bottom: 14px;
+    }
+    .fisrt-about{
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-karyera{
+        margin-top: 10px;
+    }
+}

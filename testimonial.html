@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS for navbar adjustments */
+        @media (max-width: 1400px) {
+            .navbar-expand-custom {
+                flex-direction: column;
+                overflow: hidden;
+            }
+            .navbar-expand-custom .navbar-nav {
+                flex-direction: column;
+                width: 100%;
+            }
+            .navbar-expand-custom .navbar-toggler {
+                display: block; /* Ensures the toggler is shown */
+            }
+            .navbar-expand-custom .navbar-collapse {
+                display: none; /* Hide the navbar when toggler is visible */
+            }
+        }
+
+        @media (min-width: 1401px) {
+            .navbar-expand-custom .navbar-collapse {
+                display: flex !important; /* Ensure the navbar is always shown */
+            }
+            .navbar-expand-custom .navbar-toggler {
+                display: none; /* Hide the toggler */
+            }
+        }
+
+        .navbar-brand img {
+            width: 35%; /* Logo width */
+        }
+
+        .navbar-brand .p-h {
+            margin-left: 38%;
+            margin-top: -14%;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        .navbar-nav {
+            font-size: 14px;
+        }
+
+        /* Ensure that navbar items are centered */
+        .navbar-nav {
+            margin-right: -4%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/screen.png" id="img-fluid" alt="Logo">
+                <p class="p-h"><b>Institute for Macroeconomic <br> and Regional Studies</b></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item d-flex align-items-center justify-content-center"><a class="nav-link" href="#">Mehnat bozori holati</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Yuqori oylik kasblar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ishchi kuchi talabi prognozi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Karyera yoki malaka oshirish</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Maqolalar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Biz haqimizda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
