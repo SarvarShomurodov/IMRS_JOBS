@@ -3,84 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Navbar</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <title>Job Market Forecast</title>
     <style>
-        /* Additional CSS for navbar adjustments */
-        @media (max-width: 1400px) {
-            .navbar-expand-custom {
-                flex-direction: column;
-                overflow: hidden;
-            }
-            .navbar-expand-custom .navbar-nav {
-                flex-direction: column;
-                width: 100%;
-            }
-            .navbar-expand-custom .navbar-toggler {
-                display: block; /* Ensures the toggler is shown */
-            }
-            .navbar-expand-custom .navbar-collapse {
-                display: none; /* Hide the navbar when toggler is visible */
-            }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-
-        @media (min-width: 1401px) {
-            .navbar-expand-custom .navbar-collapse {
-                display: flex !important; /* Ensure the navbar is always shown */
-            }
-            .navbar-expand-custom .navbar-toggler {
-                display: none; /* Hide the toggler */
-            }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
         }
-
-        .navbar-brand img {
-            width: 35%; /* Logo width */
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
         }
-
-        .navbar-brand .p-h {
-            margin-left: 38%;
-            margin-top: -14%;
-            font-size: 14px;
-            line-height: 1.2;
+        th {
+            background-color: #f8f8f8;
         }
-
-        .navbar-nav {
-            font-size: 14px;
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
-
-        /* Ensure that navbar items are centered */
-        .navbar-nav {
-            margin-right: -4%;
+        a {
+            color: blue;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/screen.png" id="img-fluid" alt="Logo">
-                <p class="p-h"><b>Institute for Macroeconomic <br> and Regional Studies</b></p>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item d-flex align-items-center justify-content-center"><a class="nav-link" href="#">Mehnat bozori holati</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Yuqori oylik kasblar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Ishchi kuchi talabi prognozi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Karyera yoki malaka oshirish</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Maqolalar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Biz haqimizda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>Tez faktlar: mehnat bozori prognozlari</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Yo'nalish</td>
+                <td>Bandlik</td>
+            </tr>
+            <tr>
+                <td>Asosiy ko'rsatkichlar</td>
+                <td>Ta'lim, o'qitish va tajriba</td>
+            </tr>
+            <tr>
+                <td>Ma'lumotlar qanday olinadi</td>
+                <td>Bandlik prognozi</td>
+            </tr>
+            <tr>
+                <td>Tasniflash</td>
+                <td>Demografik, tarmoq, kasb</td>
+            </tr>
+            <tr>
+                <td>Ma'lumotlar davriyligi</td>
+                <td>Yillik</td>
+            </tr>
+            <tr>
+                <td>Geografik tafsilot</td>
+                <td>Respublika ko'lami</td>
+            </tr>
+            <tr>
+                <td>Qo'llash doirasi</td>
+                <td>Hukumat, xususiy sektor</td>
+            </tr>
+            <tr>
+                <td>Malumot davri</td>
+                <td>2022–32</td>
+            </tr>
+            <tr>
+                <td>Asosiy natijalar</td>
+                <td>Bandlik prognozlari yangiliklari</td>
+            </tr>
+            <tr>
+                <td>Dastur veb-sahifasi</td>
+                <td><a href="http://www.careerinfo.uz">www.careerinfo.uz</a></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
