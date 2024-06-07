@@ -3,87 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Market Forecast</title>
+    <title>Interactive Map with Leaflet and Mapbox</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" 
+          integrity="sha384-xodZdLlF+3MbswWd3vZL8JyJlBfpbbLhWj9JrhwF5Ij5yCl5w5nPPjpbbL+8FoJy" 
+          crossorigin=""/>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+        #stateMap {
+            height: 500px; /* Adjust height as needed */
+        }
+        .legendSet {
+            display: none; /* Initially hide all legends */
+        }
+        .legendSet.active {
+            display: block; /* Show active legend */
+        }
+        .dataSelects {
+            padding: 10px;
             background-color: #f4f4f4;
+            border-bottom: 1px solid #ccc;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-        th {
-            background-color: #f8f8f8;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        a {
-            color: blue;
-            text-decoration: none;
+        .legendColours div {
+            display: inline-block;
+            width: 50px;
+            height: 20px;
         }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Tez faktlar: mehnat bozori prognozlari</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Yo'nalish</td>
-                <td>Bandlik</td>
-            </tr>
-            <tr>
-                <td>Asosiy ko'rsatkichlar</td>
-                <td>Ta'lim, o'qitish va tajriba</td>
-            </tr>
-            <tr>
-                <td>Ma'lumotlar qanday olinadi</td>
-                <td>Bandlik prognozi</td>
-            </tr>
-            <tr>
-                <td>Tasniflash</td>
-                <td>Demografik, tarmoq, kasb</td>
-            </tr>
-            <tr>
-                <td>Ma'lumotlar davriyligi</td>
-                <td>Yillik</td>
-            </tr>
-            <tr>
-                <td>Geografik tafsilot</td>
-                <td>Respublika ko'lami</td>
-            </tr>
-            <tr>
-                <td>Qo'llash doirasi</td>
-                <td>Hukumat, xususiy sektor</td>
-            </tr>
-            <tr>
-                <td>Malumot davri</td>
-                <td>2022–32</td>
-            </tr>
-            <tr>
-                <td>Asosiy natijalar</td>
-                <td>Bandlik prognozlari yangiliklari</td>
-            </tr>
-            <tr>
-                <td>Dastur veb-sahifasi</td>
-                <td><a href="http://www.careerinfo.uz">www.careerinfo.uz</a></td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="stateMap" class="leaflet-container"></div>
+    <div class="dataSelects">
+        <select id="stateDatatype" onchange="updateMapData()">
+            <option value="unemState">Unemployment rate</option>
+            <option value="partState">Participation rate</option>
+            <option value="bothState">Unemployment rate x Participation rate</option>
+        </select>
+    </div>
+    <div id="bothStateGraph" class="legendSet both">
+        <!-- Additional HTML and styling for legend -->
+        <p class="values"><span class="low">Low</span><span class="mid">Medium</span><span class="high">High</span></p>
+        <p class="type">Both Rates →</p>
+    </div>
+    <div id="unemStateGraph" class="legendSet unem active">
+        <!-- Additional HTML and styling for legend -->
+        <p class="values"><span class="low">3.8%</span><span class="mid">4%</span><span class="high">4.2%</span></p>
+        <p class="type">Unemployment Rate →</p>
+    </div>
+    <div id="partStateGraph" class="legendSet part">
+        <!-- Additional HTML and styling for legend -->
+        <p class="values"><span class="low">61%</span><span class="mid">66.9%</span><span class="high">72.8%</span></p>
+        <p class="type">Participation Rate →</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha384-3bWoIj7+MtiMd0PP/xwPz8/QUrgevIHRi8eP1OxIKOoC2XaCglLORs6Y4ga9k5L5"
+            crossorigin=""></script>
+    <script>
+        var mymap = L.map('stateMap').setView([-25.2744, 133.7751], 4);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11', // Example Mapbox style
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'your-mapbox-access-token' // Replace with your Mapbox access token
+        }).addTo(mymap);
+
+        function updateMapData() {
+            var selectedDataType = document.getElementById('stateDatatype').value;
+            document.querySelectorAll('.legendSet').forEach(function(legend) {
+                legend.classList.remove('active');
+            });
+            var activeLegend = document.getElementById(selectedDataType + 'Graph');
+            if (activeLegend) {
+                activeLegend.classList.add('active');
+            }
+        }
+    </script>
 </body>
 </html>

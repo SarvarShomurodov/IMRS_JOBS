@@ -1,6 +1,91 @@
 /* .custom-ml{
     margin-left: 200px !important;
 } */
+.stat-card {
+    border: 2px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px; /* Padding inside the card */
+    margin: 10px; /* Space between cards */
+    display: flex;
+    align-items: center;
+  }
+  .icon3 {
+    font-size: 25px; /* Icon size */
+    background-color: #f1f4f9;
+    border-radius: 5px;
+    padding: 5px 5.5px;
+  }
+  .icon2 {
+    font-size: 25px; /* Icon size */
+    background-color: #f1f4f9;
+    border-radius: 5px;
+    padding: 5px 2.3px;
+  }
+  .icon {
+    font-size: 25px; /* Icon size */
+    background-color: #f1f4f9;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .data {
+    font-size: 20px; /* Data size */
+    font-weight: bold; /* Make data bold */
+  }
+  .label {
+    font-size: 13px; /* Label size */
+    color: #666; /* Grey color for text */
+  }
+.containerr {
+    display: flex; /* Establishes a flex container */
+    justify-content: space-between; /* Space between the children pushes them to opposite ends */
+    align-items: center; /* Centers items vertically */
+    padding: 0 10px; /* Adds some padding on the left and right */
+  }
+  .work-spann {
+    padding: 1px; /* Adjust padding as needed */
+    background-color: #f5e8ff; /* Just for visibility */
+    border-radius: 7px;
+    font-size: 14px;
+  }
+  .containerr2 {
+    display: flex; /* Establishes a flex container */
+    justify-content: space-between; /* Space between the children pushes them to opposite ends */
+    align-items: center; /* Centers items vertically */
+    padding: 0 10px; /* Adds some padding on the left and right */
+    font-size: 14px;
+  }
+  .work-spann2 {
+    padding: 1px; /* Adjust padding as needed */
+    font-size: 14px;
+  }
+  .all-div3{
+    border: 0.5px solid gray;
+    border-radius: 7px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+
+}
+.all-div2{
+    border: 0.5px solid gray;
+    border-radius: 15px;
+}
+.all-div{
+    background-color: #1192e8;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+.all{
+    width: 99%;
+}
+.btn-row {
+    justify-content: center; /* Centers buttons in the row */
+    gap: 11px; /* Adds space between the buttons */
+  }
+.btn{
+    padding: 10px 20px; /* Padding inside the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size of text inside the button */
+}
 .body-table{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -138,3 +223,44 @@
         margin-top: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    .all{
+        width: 90%;       
+        margin-left: -31px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .umumiy{
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1580px) {
+    /* Your styles go here */
+    .roww{
+        margin-bottom: 15px;
+    }
+    .stat-card {
+        border: 2px solid #ccc; /* Light grey border */
+        border-radius: 8px; /* Rounded corners */
+        padding: 2px; /* Padding inside the card */
+        margin: 10px; /* Space between cards */
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+      .icon {
+        font-size: 20px; /* Icon size */
+      }
+      .data {
+        font-size: 20px; /* Data size */
+        font-weight: bold; /* Make data bold */
+      }
+      .label {
+        font-size: 13px; /* Label size */
+        color: #666; /* Grey color for text */
+      }
+      
+  }
