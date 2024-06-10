@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
         rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -34,50 +35,54 @@
 
 <body>    
 <!-- Navbar start--> 
-<div>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom" style="z-index: 1030; width: 100%; top: 0; position: fixed; background-color: white;">
+    <div class="container">
+        <a style="width: 36%;" class="navbar-brand" href="index.html">
+            <img style="width: 82%;" src="img/result.png" id="img-fluid" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><b>Mehnat bozori holati</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><b>Yuqori oylik kasblar</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="404.html"><b>Ishchi kuchi talabi prognozi</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html"><b>Karyera yoki malaka oshirish</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="team.html"><b>Maqolalar</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html"><b>Biz haqimizda</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Adding a padding-top to the body to offset the fixed navbar height -->
+<div style="padding-top: 70px;">
+    <div class="py-1" style="background-color: #f5e8ff; height: 4em;"></div>
+    <div style="background-color: #2f005f;" class="container-fluid py-5">
         <div class="container">
-            <a style="width: 36%;" class="navbar-brand" href="index.html"><img style="width: 90%;" src="img/result.png" id="img-fluid" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div style="margin-right: -4%;" class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Mehnat bozori holati</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Yuqori oylik kasblar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="404.html">Ishchi kuchi talabi prognozi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html">Karyera yoki malaka oshirish</a></li>
-                    <li class="nav-item"><a class="nav-link" href="team.html">Maqolalar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="project.html">Biz haqimizda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        </nav>
-        <div class="py-1" style="background-color: #f5e8ff; height: 2em;">
-        </div>
-        <div style="background-color: #2f005f;" class="container-fluid py-5">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn">
-                        <h1 class="mb-4 text-white">Biz sizning kelajagingizni qurishda yordam beramiz!</h1>
-                        <p class="mb-4 text-white">Bizning maqsadimiz - xalqimizning to'liq malakali salohiyatini
-                            ro'yobga chiqarish, natijada ishchi kuchi ishtiroki,
-                            samaradorlik, ish haqi va tenglikni oshirish.</p>
-                        <div class="d-flex align-items-center mt-4">
-                            <a style="background-color: #FFD700;color: black;" class="btn btn-primary rounded-pill px-4 me-3" href="">Biz haqimizda</a>
-                        </div>
+            <!-- Content continues here -->
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn">
+                    <h1 class="mb-4 text-white">Biz sizning kelajagingizni qurishda yordam beramiz!</h1>
+                    <p class="mb-4 text-white">Bizning maqsadimiz - xalqimizning to'liq malakali salohiyatini
+                        ro'yobga chiqarish, natijada ishchi kuchi ishtiroki,
+                        samaradorlik, ish haqi va tenglikni oshirish.</p>
+                    <div class="d-flex align-items-center mt-4">
+                        <a style="background-color: #FFD700;color: black;" class="btn btn-primary rounded-pill px-4 me-3" href="">Biz haqimizda</a>
                     </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="about-img">
-                            <img style="border-radius: 15px;" class="img-fluid" src="img/imgd2.jpg">
-                        </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img style="border-radius: 15px;" class="img-fluid" src="img/imgd2.jpg">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-            <h3 style="margin-left: 19.5%;color: #2f005f">O'zbekiston raqamlarda, 2024 yil yanvar</h3>
+    </div>
+   <br>
+            <h3 style="margin-left: 16%;color: #2f005f">O'zbekiston raqamlarda, 2024 yil yanvar</h3>
         <hr>
         <section class="statistics-section text-center">
         <div class="container">
@@ -103,6 +108,8 @@
         </section>
         <hr>
 </div>
+
+
 <!-- Navbar End -->
 
 <!-- Case Start -->
