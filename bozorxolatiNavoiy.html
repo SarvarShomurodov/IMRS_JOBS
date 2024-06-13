@@ -101,7 +101,7 @@
         <div class="col-md-4 all-div2 mb-3 p-4 h-100">
             <h4>Labour Market</h4>
             <select class="form-select" aria-label="Default select example">
-                <option selected>O`zbekiston Respublikasi
+                <option selected>Navoiy viloyati
                 </option>
                 <option value="1">Samarqand viloyati
                 </option>
@@ -115,7 +115,7 @@
                 </option>
                 <option value="6">Qashqadaryo viloyati
                 </option>
-                <option value="7">Navoiy viloyati
+                <option value="7">Farg'ona viloyati
                 </option>
                 <option value="8">Namangan viloyati
                 </option>
@@ -125,7 +125,7 @@
                 </option>
                 <option value="12">Toshkent viloyati
                 </option>
-                <option value="13">Farg'ona viloyati
+                <option value="13">O`zbekiston Respublikasi
                 </option>
                 <option value="14">Xorazm viloyati
                 </option>
@@ -139,7 +139,7 @@
                         <div class="col-md-2"><h4>22.33M</h4></div>
                         <div class="col-md-10">
                             <div class="circle-button4"><i class="bi bi-arrow-up-circle"></i></div>
-                            <b>+0.8%  (1-yr)</b>
+                            <b>+0.9%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -148,8 +148,8 @@
                     <div class="row">
                         <div class="col-md-2"><h4>18.45M</h4></div>
                         <div class="col-md-10">
-                            <div class="circle-button4"><i class="bi bi-arrow-up-circle"></i></div>
-                            <b>+1.2%  (1-yr)</b>
+                            <div class="circle-button5"><i class="bi bi-arrow-down-circle"></i></div>
+                            <b>-0.1%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -159,7 +159,7 @@
                         <div class="col-md-2"><h4>12.45M</h4></div>
                         <div class="col-md-10">
                             <div class="circle-button5"><i class="bi bi-arrow-down-circle"></i></div>
-                            <b>-7.3%  (1-yr)</b>
+                            <b>-9.1%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -169,7 +169,7 @@
                         <div class="col-md-2"><h4>15.45M</h4></div>
                         <div class="col-md-10">
                             <div class="circle-button5"><i class="bi bi-arrow-down-circle"></i></div>
-                            <b>-0.5%  (1-yr)</b>
+                            <b>-1.7%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -178,8 +178,8 @@
                     <div class="row">
                         <div class="col-md-2"><h4>10.45M</h4></div>
                         <div class="col-md-10">
-                            <div class="circle-button5"><i class="bi bi-arrow-down-circle"></i></div>
-                            <b>-0.2%  (1-yr)</b>
+                            <div class="circle-button5"><i style="color: rgb(0, 0, 0);" class="bi bi-circle"></i></div>
+                            <b>0.0%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -328,8 +328,8 @@
                 chart.update({
                     title: { text: 'Mehnatga layoqatli yoshdagi mehnatga layoqatli aholi soni' },
                     series: [{
-                        name: 'Aholi o`sish',
-                        data: [16.534, 17.170, 17.452, 17.699, 17.938, 18.168, 18.372, 18.549, 18.712, 18.858, 19.076, 19.238, 19.939]
+                        name: 'Navoiy',
+                        data: [502.3, 513.7, 520, 526.2, 531.2, 535.6, 540.1, 544.1, 549.1, 553.4, 553.1, 561.9, 566.9]
                     }]
                 });
                 document.getElementById('first').innerHTML = '';
@@ -343,36 +343,36 @@
                 chart.update({
                     title: { text: 'Iqtisodiyotda bandlar soni' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [14.934, 15.070, 15.452, 15.799, 16.138, 16.368, 16.572, 16.749, 16.912, 17.058, 17.276, 17.438, 17.939]
+                        name: 'Navoiy',
+                        data: [407.9, 413.4, 410.1, 418.5, 419.6, 420.6, 421.2, 421.8, 422.4, 407.7, 412.7, 399.4, 410.4, 410.1]
                     }]
                 });
                 document.getElementById('first').innerHTML = 'Male';
                 document.getElementById('second').innerHTML = 'Famale';
-                document.getElementById('countMale').innerHTML = '8058.6';
-                document.getElementById('prasentMale').innerHTML = '58.80%';
-                document.getElementById('countFamale').innerHTML = '5647.6';
-                document.getElementById('prasentFamale').innerHTML = '41.20%';
+                document.getElementById('countMale').innerHTML = '239.1';
+                document.getElementById('prasentMale').innerHTML = '';
+                document.getElementById('countFamale').innerHTML = '171';
+                document.getElementById('prasentFamale').innerHTML = '';
             }else if (type === 'unemployment') {
                 chart.update({
                     title: { text: 'Ishsizlik darajasi' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [5.4,5,4.9,4.9,5.1,5.2,5.2,5.8,9.3,9,10.5,9.6,8.9]
+                        name: 'Navoiy',
+                        data: [4.9, 4.7, 4.9, 5.2, 5.2, 5, 5, 5.2, 8.7, 8.5, 9.4, 8.8, 8]
                     }]
                 });
                 document.getElementById('first').innerHTML = 'Male';
                 document.getElementById('second').innerHTML = 'Famale';
-                document.getElementById('countMale').innerHTML = '13.4';
+                document.getElementById('countMale').innerHTML = '3.3';
                 document.getElementById('prasentMale').innerHTML = '';
-                document.getElementById('countFamale').innerHTML = '5.4';
+                document.getElementById('countFamale').innerHTML = '13.9';
                 document.getElementById('prasentFamale').innerHTML = '';
             }else if (type === 'faollik') {
                 chart.update({
                     title: { text: 'Aholining iqtisodiy faollik darajasi' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [70.7,69.7,70,70.5,71.3,71.9,72.5,73.5,74.3,75,73.8,74.1,73.7]
+                        name: 'Navoiy',
+                        data: [79.2, 78.3, 78.5, 78.1, 77.7, 77.1, 76.7, 76.4, 75.8, 75.9, 73.8, 74.9, 73.6]
                     }]
                 });
                 document.getElementById('first').innerHTML = '';
@@ -385,15 +385,15 @@
                 chart.update({
                     title: { text: 'Iqtisodiy nofaol aholi soni' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [4439.4,4744.9,4478.6,4714.2,4651.1,4542.6,4508.4,4466.5,4309,4187.9,4072.6,4360.8,4354.2]
+                        name: 'Navoiy',
+                        data: [102.6, 108, 124.8, 104.1, 104.4, 99.4, 96.7, 99.3, 101.5, 105.7, 104.9, 114.3, 114.3]
                     }]
                 });
                 document.getElementById('first').innerHTML = 'Qishloq';
                 document.getElementById('second').innerHTML = 'Shahar';
-                document.getElementById('countMale').innerHTML = '5.4';
+                document.getElementById('countMale').innerHTML = '3.3';
                 document.getElementById('prasentMale').innerHTML = '';
-                document.getElementById('countFamale').innerHTML = '5.4';
+                document.getElementById('countFamale').innerHTML = '3.3';
                 document.getElementById('prasentFamale').innerHTML = '';
             }
 
@@ -415,7 +415,7 @@
             }else if(this.value === "6"){
                 window.location.href = 'bozorxolatiQashqadaryo.html';
             }else if(this.value === "7"){
-                window.location.href = 'bozorxolatiNavoiy.html';
+                window.location.href = 'bozorxolatiFargona.html';
             }else if(this.value === "8"){
                 window.location.href = 'bozorxolatiNamangan.html';
             }else if(this.value === "10"){
@@ -425,7 +425,7 @@
             }else if(this.value === "12"){
                 window.location.href = 'bozorxolatiToshkent.html';
             }else if(this.value === "13"){
-                window.location.href = 'bozorxolatiFargona.html';
+                window.location.href = 'bozorxolati.html';
             }else if(this.value === "14"){
                 window.location.href = 'bozorxolatiXorazm.html';
             }else if(this.value === "15"){

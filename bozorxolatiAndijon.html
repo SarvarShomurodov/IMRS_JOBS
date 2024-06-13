@@ -101,13 +101,13 @@
         <div class="col-md-4 all-div2 mb-3 p-4 h-100">
             <h4>Labour Market</h4>
             <select class="form-select" aria-label="Default select example">
-                <option selected>O`zbekiston Respublikasi
+                <option selected>Andijon viloyati
                 </option>
                 <option value="1">Samarqand viloyati
                 </option>
                 <option value="2">Qoraqalpog'iston Respublikasi
                 </option>
-                <option value="3">Andijon viloyati
+                <option value="3">O`zbekiston Respublikasi
                 </option>
                 <option value="4">Buxoro viloyati
                 </option>
@@ -139,7 +139,7 @@
                         <div class="col-md-2"><h4>22.33M</h4></div>
                         <div class="col-md-10">
                             <div class="circle-button4"><i class="bi bi-arrow-up-circle"></i></div>
-                            <b>+0.8%  (1-yr)</b>
+                            <b>+1.9%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -149,7 +149,7 @@
                         <div class="col-md-2"><h4>18.45M</h4></div>
                         <div class="col-md-10">
                             <div class="circle-button4"><i class="bi bi-arrow-up-circle"></i></div>
-                            <b>+1.2%  (1-yr)</b>
+                            <b>+2.6%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -159,7 +159,7 @@
                         <div class="col-md-2"><h4>12.45M</h4></div>
                         <div class="col-md-10">
                             <div class="circle-button5"><i class="bi bi-arrow-down-circle"></i></div>
-                            <b>-7.3%  (1-yr)</b>
+                            <b>-8.1%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -168,8 +168,8 @@
                     <div class="row">
                         <div class="col-md-2"><h4>15.45M</h4></div>
                         <div class="col-md-10">
-                            <div class="circle-button5"><i class="bi bi-arrow-down-circle"></i></div>
-                            <b>-0.5%  (1-yr)</b>
+                            <div class="circle-button4"><i class="bi bi-arrow-up-circle"></i></div>
+                            <b>+1.1%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -179,7 +179,7 @@
                         <div class="col-md-2"><h4>10.45M</h4></div>
                         <div class="col-md-10">
                             <div class="circle-button5"><i class="bi bi-arrow-down-circle"></i></div>
-                            <b>-0.2%  (1-yr)</b>
+                            <b>-9.5%  (1-yr)</b>
                         </div>
                     </div>
                 </button>
@@ -317,7 +317,7 @@
                 }
             },
             series: [{
-                name: 'O`zbekiston',
+                name: 'Andijon',
                 data: [16.534, 17.170, 17.452, 17.699, 17.938, 18.168, 18.372, 18.549, 18.712, 18.858, 19.076, 19.238, 19.939]
             }]
         });
@@ -328,8 +328,8 @@
                 chart.update({
                     title: { text: 'Mehnatga layoqatli yoshdagi mehnatga layoqatli aholi soni' },
                     series: [{
-                        name: 'Aholi o`sish',
-                        data: [16.534, 17.170, 17.452, 17.699, 17.938, 18.168, 18.372, 18.549, 18.712, 18.858, 19.076, 19.238, 19.939]
+                        name: 'Andijon',
+                        data: [1554.2,1591.4,1600.4,1634.6,1660.3,1682.9,1700.1,1713.7,1725.5,1736.6,1750.1,1739,1771.7]
                     }]
                 });
                 document.getElementById('first').innerHTML = '';
@@ -343,36 +343,36 @@
                 chart.update({
                     title: { text: 'Iqtisodiyotda bandlar soni' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [14.934, 15.070, 15.452, 15.799, 16.138, 16.368, 16.572, 16.749, 16.912, 17.058, 17.276, 17.438, 17.939]
+                        name: 'Andijon',
+                        data: [1112,1144.7,1296.8,1176.3,1210.7,1245,1271.7,1297.7,1319.2,1266.8,1284.5,1225.9,1264.3,1296.8]
                     }]
                 });
                 document.getElementById('first').innerHTML = 'Male';
                 document.getElementById('second').innerHTML = 'Famale';
-                document.getElementById('countMale').innerHTML = '8058.6';
-                document.getElementById('prasentMale').innerHTML = '58.80%';
-                document.getElementById('countFamale').innerHTML = '5647.6';
-                document.getElementById('prasentFamale').innerHTML = '41.20%';
+                document.getElementById('countMale').innerHTML = '812.7';
+                document.getElementById('prasentMale').innerHTML = '';
+                document.getElementById('countFamale').innerHTML = '484.1';
+                document.getElementById('prasentFamale').innerHTML = '';
             }else if (type === 'unemployment') {
                 chart.update({
                     title: { text: 'Ishsizlik darajasi' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [5.4,5,4.9,4.9,5.1,5.2,5.2,5.8,9.3,9,10.5,9.6,8.9]
+                        name: 'Andijon',
+                        data: [5.8,5.3,5.3,5.4,5.6,5.6,5.6,6,9.6,9.2,10.9,9.9,9.1]
                     }]
                 });
                 document.getElementById('first').innerHTML = 'Male';
                 document.getElementById('second').innerHTML = 'Famale';
-                document.getElementById('countMale').innerHTML = '13.4';
+                document.getElementById('countMale').innerHTML = '4.1';
                 document.getElementById('prasentMale').innerHTML = '';
-                document.getElementById('countFamale').innerHTML = '5.4';
+                document.getElementById('countFamale').innerHTML = '16.5';
                 document.getElementById('prasentFamale').innerHTML = '';
             }else if (type === 'faollik') {
                 chart.update({
                     title: { text: 'Aholining iqtisodiy faollik darajasi' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [70.7,69.7,70,70.5,71.3,71.9,72.5,73.5,74.3,75,73.8,74.1,73.7]
+                        name: 'Andijon',
+                        data: [73.6,72.5,72.9,73.8,75,75.7,76.6,77.7,77,77.2,74.7,75.7,76.5]
                     }]
                 });
                 document.getElementById('first').innerHTML = '';
@@ -385,15 +385,15 @@
                 chart.update({
                     title: { text: 'Iqtisodiy nofaol aholi soni' },
                     series: [{
-                        name: 'O`zbekiston',
-                        data: [4439.4,4744.9,4478.6,4714.2,4651.1,4542.6,4508.4,4466.5,4309,4187.9,4072.6,4360.8,4354.2]
+                        name: 'Andijon',
+                        data: [381,388.1,353.5,364.2,362.5,349.2,343.9,333.9,318.1,331.7,327.8,378.3,342.2]
                     }]
                 });
                 document.getElementById('first').innerHTML = 'Qishloq';
                 document.getElementById('second').innerHTML = 'Shahar';
-                document.getElementById('countMale').innerHTML = '5.4';
+                document.getElementById('countMale').innerHTML = '4.1';
                 document.getElementById('prasentMale').innerHTML = '';
-                document.getElementById('countFamale').innerHTML = '5.4';
+                document.getElementById('countFamale').innerHTML = '4.1';
                 document.getElementById('prasentFamale').innerHTML = '';
             }
 
@@ -407,7 +407,7 @@
             }else if(this.value === "2"){
                 window.location.href = 'bozorxolatiQoraqolpoq.html';
             }else if(this.value === "3"){
-                window.location.href = 'bozorxolatiAndijon.html';
+                window.location.href = 'bozorxolati.html';
             }else if(this.value === "4"){
                 window.location.href = 'bozorxolatiBuxoro.html';
             }else if(this.value === "5"){

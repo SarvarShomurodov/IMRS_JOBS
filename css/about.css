@@ -1,6 +1,10 @@
 /* .custom-ml{
     margin-left: 200px !important;
 } */
+.sex{
+    border: 1px solid;
+    border-radius: 10px;
+}
 .industries{
     text-decoration: none;
     color: #000000;
@@ -100,6 +104,15 @@ body,
 }
 .body-table{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.circle-button5 {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: red;
+}
+.circle-button5:last-child {
+    margin-right: 0;
 }
 .circle-button4 {
     display: inline-block;
