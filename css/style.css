@@ -10,7 +10,16 @@
     border-radius: 20px; /* Rounded corners */
 }
 
-
+.maqola-img{
+    margin-left: 30%;
+    width: 40%; 
+}
+@media (max-width: 768px) {
+    .maqola-img{
+        width: 70%;
+        margin-left: 15%;
+    }
+   }
 
 
 /* About end */

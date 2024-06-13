@@ -1,6 +1,18 @@
 /* .custom-ml{
     margin-left: 200px !important;
 } */
+.industries{
+    text-decoration: none;
+    color: #000000;
+}
+html,
+body,
+#container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 .stat-card {
     border: 2px solid #ccc; /* Light grey border */
     border-radius: 8px; /* Rounded corners */
@@ -88,6 +100,15 @@
 }
 .body-table{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.circle-button4 {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #1192e8;
+}
+.circle-button4:last-child {
+    margin-right: 0;
 }
 .circle-button3 {
     display: inline-block;
