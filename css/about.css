@@ -1,6 +1,19 @@
 /* .custom-ml{
     margin-left: 200px !important;
 } */
+.mapdiv{
+    width: 100%;
+    margin: auto;
+}
+.mapdiv path{
+    fill: #1192e8;
+    stroke: #dece0c;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+.mapdiv :hover{
+    fill: #c95000;
+}
 .sex{
     border: 1px solid;
     border-radius: 10px;
